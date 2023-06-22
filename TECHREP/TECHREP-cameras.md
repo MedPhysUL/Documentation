@@ -89,7 +89,7 @@ Contrast
 --------
 
 $$
-    \% \text{Contrast} = \left(\frac{I_{\max} - I_{\min}}{I_{\max} + I_{\min}}\right) \times 100\%
+    \text{Percent contrast} = \left(\frac{I_{\max} - I_{\min}}{I_{\max} + I_{\min}}\right) \times 100
 $$
 
 SNR
