@@ -9,10 +9,22 @@ This can be especially useful when running or creating code that requires specif
 
  * Python 3
    * Although there are many sources from which one may download python, it is usually downloaded from the [python website](https://www.python.org/downloads/).
+
+
  * Pip
-   * Pip is most likely already installed with python, if it is not then it can be installed with the command ```python -m ensurepip --upgrade```. For Mac users, replacing _python_ with _python3_ is recommended to ensure that the command does not refer to python 2.
+   * Pip is most likely already installed with python, if it is not then it can be installed with the command:
+   ```
+   python -m ensurepip --upgrade
+   ```
+   For Mac users, replacing _python_ with _python3_ is recommended to ensure that the command does not refer to python 2.
+
+
  * virtualenv 
-   * This is a required python package that allows the creation of virtual environments. It is usually pre-installed with python, but if it is not it can ben manually installed with ```pip install virtualenv```. For Mac users, replacing _pip_ with _pip3_ is recommended to ensure that the command does not refer to python 2.
+   * This is a required python package that allows the creation of virtual environments. It is usually pre-installed with python, but if it is not it can ben manually installed with:
+   ```
+   pip install virtualenv
+   ```
+   For Mac users, replacing _pip_ with _pip3_ is recommended to ensure that the command does not refer to python 2.
 
 ## 1. Set-up
 
@@ -23,11 +35,18 @@ This can be especially useful when running or creating code that requires specif
    2. Click on the path to the repository, write 'cmd' and press enter to open the terminal at the location.`
 
 2. Create the virtual environment:
-   1. Write in the command line ```python -m virtualenv name_of_the_virtual_environment``` with "name_of_the_virtual_environment" replaced with the desired name of the virtual environment, usually venv. For simplicity, the name of the virtual environment will now be considered to be venv.
+   1. Use the following command with "name_of_the_virtual_environment" replaced with the desired name of the virtual environment, usually venv to create the environment.
+   ```
+   python -m virtualenv name_of_the_virtual_environment
+   ```
+   For simplicity, the name of the virtual environment will now be considered to be venv.
 
 3. Activate the virtual environment:
-   1. Write in the same terminal ```cd  venv/Scripts/activate``` to activate the virtual environment.
-   2. When in a terminal at the virtual environment location, "(venv)" should appear at the left of the command line.
+   1. Write in the same terminal the following command to activate the virtual environment. 
+   ```
+   cd  venv/Scripts/activate
+   ```
+   When in a terminal at the virtual environment location, "(venv)" should appear at the left of the command line.
 
 ### Creating a virtual environment on Mac OS
 
@@ -36,11 +55,18 @@ This can be especially useful when running or creating code that requires specif
    2. Right-click on the repository and select "New Terminal at Folder" at the bottom of the options.
 
 2. Create the virtual environment:
-   1.  Write the ```python3 -m virtualenv venv``` command in the terminal.
+   1.  Use the following command with "name_of_the_virtual_environment" replaced with the desired name of the virtual environment, usually venv to create the environment.
+   ```
+   python3 -m virtualenv name_of_the_virtual_environment
+   ```
+   For simplicity, the name of the virtual environment will now be considered to be venv.
 
 3. Activate the virtual environment:
-   1. Write in the same terminal ```source venv/bin/activate``` to activate the virtual environment.
-   2.  When in a terminal at the virtual environment location, "(venv)" should appear at the left of the command line.
+   1. Write in the same terminal the following command to activate the virtual environment.
+   ```
+   source venv/bin/activate
+   ``` 
+   When in a terminal at the virtual environment location, "(venv)" should appear at the left of the command line.
 
 ## 2. Using the virtual environment as the python interpreter for an IDE
 
